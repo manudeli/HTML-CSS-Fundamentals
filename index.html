@@ -10,17 +10,21 @@
     <meta name="description" content="..." />
     <title>Document</title>
     <style>
-      img {
-        width: 200px;
-        height: 200px;
-        /* cropping by box or Use any other properties*/
-        object-fit: cover;
+      body {
+        margin: 0;
+      }
+      video {
+        width: 100vw;
+      }
+      video::-webkit-media-controls {
+        display: none;
       }
     </style>
-    <style></style>
   </head>
   <body>
-    <!-- Why alt contained meaningful description is important :: Visually impaired people use screen reader -->
-    <img src="images/sea-small.jpeg" alt="Waving Greeny Blue Sea" />
+    <video id="vid" controls="false" autoplay loop muted src="videos/ocean.mp4">
+      Your browser doesn't support videos.
+    </video>
+    <audio src=""></audio>
   </body>
 </html>
