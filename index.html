@@ -9,32 +9,33 @@
     <!-- When Searching on Google, Description below title -->
     <meta name="description" content="..." />
     <title>Document</title>
-    <style>
-      .product {
-        background-color: gold;
-        width: 300px;
-      }
-      .highlight {
-        background-color: yellow;
-      }
-    </style>
+    <style></style>
   </head>
-  <body>
-    <!-- div :: Division element,
-      Block level element :: Start on new line, Fill up Entire available space -->
-    <div class="product">
-      <p>Lorem ipsum dolor sit amet.</p>
-      <a href="#">Link</a>
-    </div>
-    <div class="product">
-      <p>Lorem ipsum dolor sit amet.</p>
-      <a href="#">Link</a>
-    </div>
 
-    <p>
-      <!-- span :: Inline element -->
-      <span class="highlight">Lorem</span> ipsum dolor sit, amet consectetur
-      adipisicing elit. Non, eos!
-    </p>
+  <!-- article, figure, mark, time :: SEMANTIC Elements Introduced in HTML5 -->
+  <body>
+    <!-- article :: An independent, self-contained content
+    ex) Forum post, Comments, Reviews, Product cards, etc. -->
+    <article class="article">
+      <h1>Heading</h1>
+      <p>
+        Published
+        <time datetime="2021-01-01 17:00">January 1 2021 05:00pm</time>
+      </p>
+      <p>
+        <mark>Lorem</mark> ipsum dolor sit amet consectetur adipisicing elit.
+        Quasi quaerat consectetur facilis aut hic nulla eos iure culpa quibusdam
+        incidunt illum dolore corrupti iusto, explicabo necessitatibus ut!
+        Quaerat laborum molestias veritatis sint illo rem. Consectetur alias
+        deleniti illo? Possimus, ea accusamus quibusdam qui explicabo facilis
+        quidem nisi laborum esse autem illum magnam rerum modi.
+      </p>
+      <figure>
+        <img src="" alt="" />
+        <figcaption>Sea this morning</figcaption>
+      </figure>
+    </article>
+
+    <!--  -->
   </body>
 </html>
