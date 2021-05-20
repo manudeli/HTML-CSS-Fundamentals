@@ -10,44 +10,50 @@
     <meta name="description" content="..." />
     <title>Document</title>
     <style>
-      ul {
-        list-style: none;
+      /* Dry :: Don't Repeat Yourself, principle in software engineering */
+      table,
+      td,
+      th {
+        padding: 12px;
+        border-collapse: collapse;
+        border: 1px solid lightblue;
+      }
+      tfoot {
+        text-align: left;
       }
     </style>
   </head>
   <body>
-    <!-- ul :: Unordered List -->
-    <ul>
-      <!-- li :: List Item -->
-      <li>About me</li>
-      <li>
-        Courses
-        <ul>
-          <li>HTML</li>
-          <li>JavaScript</li>
-          <li>Git</li>
-        </ul>
-      </li>
-      <li>Subscribe</li>
-      <li>Contact me</li>
-    </ul>
-    <!-- ol :: Ordered List -->
-    <ol>
-      <li>Preheat the oven.</li>
-      <li>Place the ingredients on the crust.</li>
-      <li>Put the pizza in the oven for 20 minutes.</li>
-    </ol>
-    <!-- dl :: Description List, dt :: Description Title, dd :: Description Detail -->
-    <dl>
-      <dt>Title</dt>
-      <dd>The Ultimate HTML and CSS Course</dd>
-      <dt>Author</dt>
-      <dd>Mosh Hamedani</dd>
-      <dt>Skills</dt>
-      <dd>HTML</dd>
-      <dd>CSS</dd>
-      <dd>Responsive Design</dd>
-      <dd>Search Engine Optimization</dd>
-    </dl>
+    <table>
+      <!-- thead, tbody, tfoot :: Semantic HTML for SEO -->
+      <thead>
+        <tr>
+          <th colspan="2">Expenses</th>
+        </tr>
+        <!-- tr :: Table Row cell -->
+        <tr>
+          <!-- th :: Table Header cell -->
+          <th>Category</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- td :: Table Data cell -->
+          <td>Marketing</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>Accounting</td>
+          <td>$200</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Total</th>
+          <th>$300</th>
+        </tr>
+      </tfoot>
+    </table>
   </body>
 </html>
