@@ -10,21 +10,44 @@
     <meta name="description" content="..." />
     <title>Document</title>
     <style>
-      body {
-        margin: 0;
-      }
-      video {
-        width: 100vw;
-      }
-      video::-webkit-media-controls {
-        display: none;
+      ul {
+        list-style: none;
       }
     </style>
   </head>
   <body>
-    <video id="vid" controls="false" autoplay loop muted src="videos/ocean.mp4">
-      Your browser doesn't support videos.
-    </video>
-    <audio src=""></audio>
+    <!-- ul :: Unordered List -->
+    <ul>
+      <!-- li :: List Item -->
+      <li>About me</li>
+      <li>
+        Courses
+        <ul>
+          <li>HTML</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+        </ul>
+      </li>
+      <li>Subscribe</li>
+      <li>Contact me</li>
+    </ul>
+    <!-- ol :: Ordered List -->
+    <ol>
+      <li>Preheat the oven.</li>
+      <li>Place the ingredients on the crust.</li>
+      <li>Put the pizza in the oven for 20 minutes.</li>
+    </ol>
+    <!-- dl :: Description List, dt :: Description Title, dd :: Description Detail -->
+    <dl>
+      <dt>Title</dt>
+      <dd>The Ultimate HTML and CSS Course</dd>
+      <dt>Author</dt>
+      <dd>Mosh Hamedani</dd>
+      <dt>Skills</dt>
+      <dd>HTML</dd>
+      <dd>CSS</dd>
+      <dd>Responsive Design</dd>
+      <dd>Search Engine Optimization</dd>
+    </dl>
   </body>
 </html>
