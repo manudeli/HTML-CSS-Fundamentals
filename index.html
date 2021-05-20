@@ -10,50 +10,31 @@
     <meta name="description" content="..." />
     <title>Document</title>
     <style>
-      /* Dry :: Don't Repeat Yourself, principle in software engineering */
-      table,
-      td,
-      th {
-        padding: 12px;
-        border-collapse: collapse;
-        border: 1px solid lightblue;
+      .product {
+        background-color: gold;
+        width: 300px;
       }
-      tfoot {
-        text-align: left;
+      .highlight {
+        background-color: yellow;
       }
     </style>
   </head>
   <body>
-    <table>
-      <!-- thead, tbody, tfoot :: Semantic HTML for SEO -->
-      <thead>
-        <tr>
-          <th colspan="2">Expenses</th>
-        </tr>
-        <!-- tr :: Table Row cell -->
-        <tr>
-          <!-- th :: Table Header cell -->
-          <th>Category</th>
-          <th>Amount</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <!-- td :: Table Data cell -->
-          <td>Marketing</td>
-          <td>$100</td>
-        </tr>
-        <tr>
-          <td>Accounting</td>
-          <td>$200</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <th>Total</th>
-          <th>$300</th>
-        </tr>
-      </tfoot>
-    </table>
+    <!-- div :: Division element,
+      Block level element :: Start on new line, Fill up Entire available space -->
+    <div class="product">
+      <p>Lorem ipsum dolor sit amet.</p>
+      <a href="#">Link</a>
+    </div>
+    <div class="product">
+      <p>Lorem ipsum dolor sit amet.</p>
+      <a href="#">Link</a>
+    </div>
+
+    <p>
+      <!-- span :: Inline element -->
+      <span class="highlight">Lorem</span> ipsum dolor sit, amet consectetur
+      adipisicing elit. Non, eos!
+    </p>
   </body>
 </html>
