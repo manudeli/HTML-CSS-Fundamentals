@@ -1,19 +1,27 @@
 body {
   margin: 10px;
 }
-
-/* Colors
-1. Named colors
-2. RGB
-3. HSL :: Hue Saturation Lightness :: 44, 98%, 50% , hsl(53deg 93% 51%)
-4. Hexadecimal
-  - Binary (0,1)
-  - Decimal (0-9)
-  - Hexadecimal (0-9,a-f) :: #e6cd10 :: No transparency channel
-*/
-
-.box {
-  width: 200px;
+div {
+  width: 300px;
   height: 200px;
-  background-color: rgba(230, 205, 21, 0.2);
+}
+
+.box1 {
+  background: linear-gradient(45deg, dodgerblue, yellow 90%, tomato);
+}
+
+.box2 {
+  background: radial-gradient(circle at top left, white, yellow);
+}
+
+/* https://cssgradient.io */
+
+.box2 {
+  /* Why putting first background is gradient can be unavailable*/
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(197, 222, 251, 1) 100%
+  );
 }
