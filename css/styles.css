@@ -7,12 +7,11 @@ div {
 }
 
 .box1 {
-  background: linear-gradient(45deg, dodgerblue, blue 90%, royalblue);
-  /* Order is important */
-  border: 10px dashed royalblue;
-  border-top: 20px solid yellow;
-  border-width: 10px 30px 40px;
-  border-radius: 50px;
+  background: linear-gradient(45deg, gold, blue 90%, royalblue);
+  box-shadow: 0 10px 30px -5px rgba(299, 200, 1, 0.9);
 }
 
-/* https://css-tricks.com/the-shapes-of-css/ */
+h1 {
+  color: white;
+  text-shadow: 0 0 30px rgba(0, 0, 255, 0.2);
+}
