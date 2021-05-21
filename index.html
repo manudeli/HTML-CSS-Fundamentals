@@ -9,48 +9,21 @@
     <!-- When Searching on Google, Description below title -->
     <meta name="description" content="..." />
     <title>Document</title>
-    <style></style>
+    <!-- Separation of Concerns  -->
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      p {
+        color: black;
+      }
+      #first {
+        color: blue;
+        font-weight: bold;
+      }
+    </style>
   </head>
 
   <body>
-    <!-- header :: introductory content
-    can belong to pages, sections, articles -->
-    <header>
-      <nav>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- main :: Every page can have only one main element
-    If using more than one main element, we will get validation error -->
-    <main>
-      <!-- section :: Group related content -->
-      <section>
-        <h2>Products</h2>
-        <article></article>
-        <article></article>
-      </section>
-      <section>
-        <h2>Testimonial</h2>
-        <article>
-          <section></section>
-          <section></section>
-          <section></section>
-        </article>
-        <article></article>
-      </section>
-    </main>
-    <!-- aside :: site element for presenting content not directly related to main content -->
-    <aside></aside>
-    <!-- footer :: can belong to pages, sections, articles -->
-    <footer>
-      <nav>
-        <ul></ul>
-      </nav>
-    </footer>
+    <p id="first">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
   </body>
 </html>
