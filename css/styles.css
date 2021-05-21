@@ -2,29 +2,12 @@ body {
   margin: 10px;
 }
 
-/* Selector Specificity (Weight)
-Browser use More Specific Selector*/
-h1 {
-  /* But, !important can make it top :: avoid it */
+p {
   color: dodgerblue;
+  border: 1px solid black;
 }
 
-.highlight {
-  color: deeppink;
+strong {
+  color: initial;
+  border: inherit;
 }
-
-#products {
-  color: green;
-}
-
-/* Last selector used :: If equal specificity */
-#products {
-  color: brown;
-}
-
-.featured #products {
-  color: dodgerblue;
-}
-
-/* Don't use like below */
-/* html body #featured h2#products.hightlight {} */
