@@ -2,27 +2,29 @@ body {
   margin: 10px;
 }
 
-/* What is difference
-- : PSEUDO-ELEMENTS :: To style part of an element
-eg. First letter
-- :: PSEUDO-CLASSES :: To style elements in a Particular state
-eg. Hovered anchor
-*/
-
-p::first-letter {
-  font-size: 140%;
+/* Selector Specificity (Weight)
+Browser use More Specific Selector*/
+h1 {
+  /* But, !important can make it top :: avoid it */
+  color: dodgerblue;
 }
 
-p::first-line {
-  font-weight: bold;
+.highlight {
+  color: deeppink;
 }
 
-/* Block text */
-::selection {
-  background-color: pink;
+#products {
+  color: green;
 }
 
-p::after {
-  content: "...";
-  display: block;
+/* Last selector used :: If equal specificity */
+#products {
+  color: brown;
 }
+
+.featured #products {
+  color: dodgerblue;
+}
+
+/* Don't use like below */
+/* html body #featured h2#products.hightlight {} */
