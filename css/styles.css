@@ -2,21 +2,32 @@ body {
   margin: 10px;
 }
 
-/* a[href*="google"] {
+/* Relational Selectors
+1. Cleaner markup
+2. Can be fragile
+3. Not as fast as basic selectors
+- because Browser read CSS right to left not like us
+*/
+/* Premature Optimization is the root of all evils
+So, Prefer to select elements by their ID or Class
+*/
+
+/* All Child p */
+/* #products p {
   color: orange;
 } */
 
-/* href^ :: Start with "" */
-/* a[href^="https"] {
+/* Direct Child p */
+/* #products > p {
   color: orange;
 } */
 
-/* href$ :: Start with "" */
-/* a[href$=".com"] {
+/* p right after #products */
+/* #products + p {
   color: orange;
 } */
 
-/* href$ :: Start with "" */
-a[href^="https"][href$=".com"] {
+/* all p after #products */
+#products ~ p {
   color: orange;
 }
