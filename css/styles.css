@@ -2,26 +2,27 @@ body {
   margin: 10px;
 }
 
-article p:first-of-type {
+/* What is difference
+- : PSEUDO-ELEMENTS :: To style part of an element
+eg. First letter
+- :: PSEUDO-CLASSES :: To style elements in a Particular state
+eg. Hovered anchor
+*/
+
+p::first-letter {
   font-size: 140%;
-  font-style: italic;
 }
 
-article :last-child {
+p::first-line {
   font-weight: bold;
 }
 
-ul li:nth-child(even) {
-  color: deeppink;
+/* Block text */
+::selection {
+  background-color: pink;
 }
 
-a:visited,
-a:link {
-  color: dodgerblue;
-}
-
-/* Use focus with hover for user using Tab key */
-a:hover,
-a:focus {
-  color: deeppink;
+p::after {
+  content: "...";
+  display: block;
 }
