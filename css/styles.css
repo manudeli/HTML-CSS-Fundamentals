@@ -2,32 +2,26 @@ body {
   margin: 10px;
 }
 
-/* Relational Selectors
-1. Cleaner markup
-2. Can be fragile
-3. Not as fast as basic selectors
-- because Browser read CSS right to left not like us
-*/
-/* Premature Optimization is the root of all evils
-So, Prefer to select elements by their ID or Class
-*/
+article p:first-of-type {
+  font-size: 140%;
+  font-style: italic;
+}
 
-/* All Child p */
-/* #products p {
-  color: orange;
-} */
+article :last-child {
+  font-weight: bold;
+}
 
-/* Direct Child p */
-/* #products > p {
-  color: orange;
-} */
+ul li:nth-child(even) {
+  color: deeppink;
+}
 
-/* p right after #products */
-/* #products + p {
-  color: orange;
-} */
+a:visited,
+a:link {
+  color: dodgerblue;
+}
 
-/* all p after #products */
-#products ~ p {
-  color: orange;
+/* Use focus with hover for user using Tab key */
+a:hover,
+a:focus {
+  color: deeppink;
 }
