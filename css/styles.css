@@ -2,16 +2,10 @@ body {
   margin: 10px;
 }
 
-.box::before {
-  content: "Hello";
-}
-
 .box {
-  width: 100px;
-  height: 100px;
-  background-color: gold;
-  padding: 20px;
-  /* default box-sizing : content-box */
-  /* box-sizing: border-box make box content area is shrink */
-  display: inline-block;
+  border: 3px solid gold;
+  width: 150px;
+  height: 150px;
+  /* Default overflow: visible */
+  overflow: hidden auto;
 }
