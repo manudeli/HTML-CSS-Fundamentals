@@ -1,17 +1,8 @@
 body {
   margin: 10px;
 }
-div {
-  width: 300px;
-  height: 200px;
-}
 
-.box1 {
-  background: linear-gradient(45deg, gold, blue 90%, royalblue);
-  box-shadow: 0 10px 30px -5px rgba(299, 200, 1, 0.9);
-}
-
-h1 {
-  color: white;
-  text-shadow: 0 0 30px rgba(0, 0, 255, 0.2);
+p {
+  padding: 20px;
+  margin: 20px;
 }
