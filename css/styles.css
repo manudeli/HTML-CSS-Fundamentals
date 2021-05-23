@@ -8,27 +8,42 @@ body {
   height: 200vh;
 }
 
-.tweet {
-  border: 3px solid lightgrey;
-}
+/* Sizing Items
+1. flex-basis (the initial size of a flex item)
+2. flex-grow (the growth factor)
+3. flex-shrink (the shrink factor)
+4. flex
+*/
 
-/* Prevent Polluting HTML for SEO */
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.tweet2 {
-  border: 3px solid lightgrey;
-  /* This is dirty solution for float's parent collapsing */
-  overflow: auto;
-}
-
-.avatar {
+.box {
+  flex-basis: 30rem;
+  /* Break Misconception :: flex-grow divide just space of margin without contents not every space */
+  flex-grow: 1;
+  flex-shrink: 1;
+  /* Use flex with 3 values (grow, shrink, basis) eg. flex: 1 1 15rem; */
   width: 5rem;
   height: 5rem;
-  background-color: gold;
-  float: left;
-  margin-right: 0.5rem;
+  background: gold;
+  margin: 1rem;
+}
+
+.box-one {
+  flex-shrink: 0.1;
+}
+
+.container {
+  border: 3px solid lightgrey;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  height: 30vh;
+}
+
+.container2 {
+  border: 3px solid lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
 }
