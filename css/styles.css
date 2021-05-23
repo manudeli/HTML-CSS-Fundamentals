@@ -4,15 +4,32 @@ html {
 }
 
 body {
+  margin: 10px;
+  height: 200vh;
 }
 
+.boxes {
+  border: 3px solid lightgrey;
+  position: relative;
+}
 .box {
-  /* em :: 10*font-size of the current element */
-  /* all browser give us 16px as default font-size */
-  /* rem :: 10*font-size of the root element */
+  width: 5rem;
+  height: 5rem;
+}
 
-  width: 15rem;
-  height: 100vh;
-  background-color: gold;
-  border-top: 3px solid orange;
+.box-one {
+  background: gold;
+}
+
+.box-two {
+  background: tomato;
+  position: fixed;
+  top: 0;
+  left: 2rem;
+  right: 2rem;
+  width: auto;
+}
+
+.box-three {
+  background: dodgerblue;
 }
