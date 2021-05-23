@@ -1,49 +1,24 @@
-html {
-  /* root font-size : 62.5% of 16px = 10px */
-  font-size: 62.5%;
-}
-
 body {
   margin: 10px;
   height: 200vh;
 }
 
-/* Sizing Items
-1. flex-basis (the initial size of a flex item)
-2. flex-grow (the growth factor)
-3. flex-shrink (the shrink factor)
-4. flex
-*/
+.container {
+  display: grid;
+  /* Shorthands of grid-template: rows / columns; */
+  grid-template: repeat(3, 100px) / repeat(2, 100px);
+  border: 3px solid lightgrey;
+  /* Centering inside Cells of Grid */
+  justify-items: center;
+  align-items: center;
+  /* Move all grid container */
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
 
 .box {
-  flex-basis: 30rem;
-  /* Break Misconception :: flex-grow divide just space of margin without contents not every space */
-  flex-grow: 1;
-  flex-shrink: 1;
-  /* Use flex with 3 values (grow, shrink, basis) eg. flex: 1 1 15rem; */
   width: 5rem;
   height: 5rem;
   background: gold;
-  margin: 1rem;
-}
-
-.box-one {
-  flex-shrink: 0.1;
-}
-
-.container {
-  border: 3px solid lightgrey;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-  height: 30vh;
-}
-
-.container2 {
-  border: 3px solid lightgrey;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60vh;
 }
