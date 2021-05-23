@@ -4,10 +4,11 @@ body {
 
 .container {
   display: grid;
-  /* Shorthands of grid-template: rows / columns; */
   grid-template: 100px auto 100px / 30fr 70fr;
-  /* GAP
-  1. row-gap, 2. column-gap, gap */
+  grid-template-areas:
+    "header  header"
+    "sidebar main"
+    ".       footer";
   gap: 10px;
   border: 3px solid lightgrey;
   height: 100vh;
@@ -18,5 +19,9 @@ body {
 }
 
 .box-one {
-  grid-column: 1 / span 2;
+  grid-area: header;
+}
+
+.box-four {
+  grid-area: footer;
 }
