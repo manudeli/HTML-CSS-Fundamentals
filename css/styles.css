@@ -1,24 +1,18 @@
 body {
-  margin: 10px;
   height: 200vh;
 }
 
 .container {
   display: grid;
   /* Shorthands of grid-template: rows / columns; */
-  grid-template: repeat(3, 100px) / repeat(2, 100px);
+  grid-template: 100px auto 100px / 100px 30fr 70fr;
+  /* GAP
+  1. row-gap, 2. column-gap, gap */
+  gap: 10px 30px;
   border: 3px solid lightgrey;
-  /* Centering inside Cells of Grid */
-  justify-items: center;
-  align-items: center;
-  /* Move all grid container */
-  justify-content: center;
-  align-content: center;
   height: 100vh;
 }
 
 .box {
-  width: 5rem;
-  height: 5rem;
   background: gold;
 }
