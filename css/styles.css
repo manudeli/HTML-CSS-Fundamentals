@@ -8,28 +8,27 @@ body {
   height: 200vh;
 }
 
-.boxes {
+.tweet {
   border: 3px solid lightgrey;
-  position: relative;
 }
-.box {
+
+/* Prevent Polluting HTML for SEO */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.tweet2 {
+  border: 3px solid lightgrey;
+  /* This is dirty solution for float's parent collapsing */
+  overflow: auto;
+}
+
+.avatar {
   width: 5rem;
   height: 5rem;
-}
-
-.box-one {
-  background: gold;
-}
-
-.box-two {
-  background: tomato;
-  position: fixed;
-  top: 0;
-  left: 2rem;
-  right: 2rem;
-  width: auto;
-}
-
-.box-three {
-  background: dodgerblue;
+  background-color: gold;
+  float: left;
+  margin-right: 0.5rem;
 }
