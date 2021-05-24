@@ -2,14 +2,6 @@ html {
   font-size: 100%;
 }
 
-.meal:hover {
-  filter: grayscale(0.7) blur(3px);
+.meal {
+  width: 400px;
 }
-
-/* Use CSS image Filters
-1. grayscale
-2. blur
-3. contrast
-4. brightness
-5. saturate
-*/
