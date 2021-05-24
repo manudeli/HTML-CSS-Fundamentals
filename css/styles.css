@@ -2,5 +2,10 @@ html {
   font-size: 100%;
 }
 
-.meal {
+body {
+  background: url(../images/constellation.svg);
+}
+
+.ufo {
+  width: 100px;
 }
