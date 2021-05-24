@@ -4,6 +4,8 @@
     url("fonts/open-sans/opensans-regular-webfont.woff") format("woff");
   font-weight: 500;
   font-style: normal;
+  /* About Flash of Unstyled Text when load custom font file instead of fallback font */
+  font-display: optional;
 }
 @font-face {
   font-family: "opensans";
