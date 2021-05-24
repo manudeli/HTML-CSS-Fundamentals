@@ -20,14 +20,10 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- for IE -->
     <picture>
-      <source type="images/webp" srcset="images/meal.webp" />
-      <source type="images/jpg" srcset="images/meal.webp" />
-      <img src="images/meal.jpg" alt="A bowl of salmon and curry" />
+      <source media="(max-width:500px)" srcset="images/meal-cropped.jpg" />
+      <source media="(min-width:500px)" srcset="images/meal.jpg" />
+      <img src="images/meal.jpg" alt="" />
     </picture>
-
-    <img src="images/meal.webp" alt="" />
-    <img src="images/meal.jpg" alt="" />
   </body>
 </html>
