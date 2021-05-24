@@ -2,10 +2,43 @@ html {
   font-size: 100%;
 }
 
-body {
-  background: url(../images/bg-sanfrancisco.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 300vh;
+.bg-dishes {
+  background: url("../images/css-sprite-combined.png") 0px -0px;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
 }
+
+.bg-landing {
+  background: url("../images/css-sprite-combined.png") -100px -0px;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.bg-rocketship {
+  background: url("../images/css-sprite-combined.png") -200px -0px;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.bg-saturn {
+  background: url("../images/css-sprite-combined.png") -300px -0px;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.bg-ufo {
+  background: url("../images/css-sprite-combined.png") -400px -0px;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+/* PROBLEM of CSS Sprites */
+/* 
+File size can get too large
+Sprites are not flexible
+*/
