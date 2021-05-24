@@ -2,16 +2,14 @@ html {
   font-size: 100%;
 }
 
-.meal {
-  clip-path: polygon(
-    0% 20%,
-    60% 20%,
-    60% 0%,
-    100% 50%,
-    60% 100%,
-    60% 80%,
-    0% 80%
-  );
+.meal:hover {
+  filter: grayscale(0.7) blur(3px);
 }
 
-/* Use CSS Clip Path Maker https://bennettfeely.com/clippy/ */
+/* Use CSS image Filters
+1. grayscale
+2. blur
+3. contrast
+4. brightness
+5. saturate
+*/
