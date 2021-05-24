@@ -2,26 +2,8 @@ body {
   height: 200vh;
 }
 
-.container {
-  display: grid;
-  grid-template: 100px auto 100px / 30fr 70fr;
-  grid-template-areas:
-    "header  header"
-    "sidebar main"
-    ".       footer";
-  gap: 10px;
-  border: 3px solid lightgrey;
-  height: 100vh;
-}
-
-.box {
-  background: gold;
-}
-
-.box-one {
-  grid-area: header;
-}
-
-.box-four {
-  grid-area: footer;
+.first {
+  /* Know difference of them, display:none visibility:hidden */
+  /* display: none; */
+  visibility: hidden;
 }
