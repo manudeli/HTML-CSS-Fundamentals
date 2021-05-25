@@ -22,21 +22,14 @@
   </head>
   <body>
     <form>
-      <!-- If curious more, https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement -->
-      <input type="text" />
-      <input type="number" />
-      <input type="password" />
-      <input type="date" />
-      <input type="email" />
-      <input type="checkbox" />
-      <input type="button" />
-
-      <textarea>Comment...</textarea>
-      <input type="email" placeholder="Email" />
-      <input type="email" value="readonly..." readonly />
-      <input type="email" value="readonly..." disabled />
-      <input type="email" maxlength="5" />
-      <input type="email" autofocus />
+      <input type="text" list="countries" autocomplete="off" />
+      <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist -->
+      <datalist id="countries">
+        <option data-value="1">Australia</option>
+        <option>Canada</option>
+        <option>India</option>
+        <option>United State</option>
+      </datalist>
     </form>
   </body>
 </html>
