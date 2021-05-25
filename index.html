@@ -22,8 +22,12 @@
   </head>
   <body>
     <form>
-      <!-- Do not use sensitive information as value of hidden input -->
-      <input type="hidden" name="course-id" value="1234" />
+      <!-- Always should use max length -->
+      <input type="text" required minlength="3" maxlength="10" />
+      <input type="email" required />
+      <input type="date" required />
+      <input type="number" required min="0" max="5" />
+      <button type="submit">Submit</button>
     </form>
   </body>
 </html>
