@@ -22,14 +22,18 @@
   </head>
   <body>
     <form>
-      <input type="text" list="countries" autocomplete="off" />
-      <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist -->
-      <datalist id="countries">
-        <option data-value="1">Australia</option>
-        <option>Canada</option>
-        <option>India</option>
-        <option>United State</option>
-      </datalist>
+      <select>
+        <optgroup label="Front-end Courses">
+          <option value="1">HTML</option>
+          <option value="2">CSS</option>
+          <option value="3">JavaScript</option>
+        </optgroup>
+        <optgroup label="Back-end Courses">
+          <option value="1">Node.js</option>
+          <option value="2">ASP.NET</option>
+          <option value="3">Django</option>
+        </optgroup>
+      </select>
     </form>
   </body>
 </html>
