@@ -22,19 +22,8 @@
   </head>
   <body>
     <form>
-      <fieldset>
-        <!-- legend :: label for group -->
-        <legend>Billing Address</legend>
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
-      </fieldset>
-      <section>
-        <h2>Payment</h2>
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
-      </section>
+      <!-- Do not use sensitive information as value of hidden input -->
+      <input type="hidden" name="course-id" value="1234" />
     </form>
   </body>
 </html>
