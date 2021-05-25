@@ -22,19 +22,21 @@
   </head>
   <body>
     <form>
-      <div>
-        <!-- "for" of label is for accessing input -->
-        <label for="name">Name</label>
-        <input class="form-control" id="name" type="text" />
-      </div>
-      <div>
-        <label for="email">Email</label>
-        <input id="email" type="email" />
-      </div>
+      <!-- If curious more, https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement -->
+      <input type="text" />
+      <input type="number" />
+      <input type="password" />
+      <input type="date" />
+      <input type="email" />
+      <input type="checkbox" />
+      <input type="button" />
 
-      <button type="submit">Register</button>
-      <!-- Automatically clear form -->
-      <button type="reset">Clear</button>
+      <textarea>Comment...</textarea>
+      <input type="email" placeholder="Email" />
+      <input type="email" value="readonly..." readonly />
+      <input type="email" value="readonly..." disabled />
+      <input type="email" maxlength="5" />
+      <input type="email" autofocus />
     </form>
   </body>
 </html>
