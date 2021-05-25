@@ -25,9 +25,19 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <span class="icon">
-      <!-- i is originally made for Italic, but this case is an accepted practice, But if you don't wanna accept, Use span -->
-      <i class="fas fa-bell fa-2x"></i
-    ></span>
+    <form>
+      <div>
+        <!-- "for" of label is for accessing input -->
+        <label for="name">Name</label>
+        <input id="name" type="text" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input id="email" type="text" />
+      </div>
+      <button type="submit">Register</button>
+      <!-- Automatically clear form -->
+      <button type="reset">Clear</button>
+    </form>
   </body>
 </html>
