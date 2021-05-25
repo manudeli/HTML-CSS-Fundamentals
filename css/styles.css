@@ -25,8 +25,13 @@ body {
   width: 100px;
   height: 100px;
   background: gold;
+}
+
+.animation-pop {
   animation: pop 4s cubic-bezier(0.68, -0.6, 0.32, 1.6) 1s infinite alternate;
 }
+
+/* Reusable Animation :: https://animate.style/ */
 
 /* Cheating Sheet :: https://easings.net/#*/
 /* Cubic Bezier Generator :: https://cubic-bezier.com/ */
